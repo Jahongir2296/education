@@ -3,6 +3,10 @@
 let modal = document.querySelector(".bg-modal");
 let registraionBtn = document.querySelector(".registration");
 let closeBtn = document.querySelector(".close");
+let registraionModal = document.querySelector(".modal-registration");
+let emailInput = document.querySelector(".emailInput");
+let passInput = document.querySelector(".passInput");
+let modalRegistration = document.querySelector(".modal-registration");
 
 
 const openModal = function() {
@@ -18,6 +22,26 @@ const closeModal = function() {
 
 registraionBtn.addEventListener("click", openModal);
 closeBtn.addEventListener("click", closeModal);
+
+
+function checkInput() {
+
+
+    emailInput.addEventListener('keyup', () => {
+        if ((emailInput.value == '')) {
+            modalRegistration.addEventListener('submit', (e) => {
+                e.preventDefault();
+                console.log('nmadir')
+            });
+        }
+    });
+
+    passInput.addEventListener('keyup', () => {
+        console.log(passInput.value)
+    })
+}
+
+checkInput()
 
 
 
