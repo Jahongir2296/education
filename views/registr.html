@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css/main.css">
+    <link rel="stylesheet" href="../style.css/main.css">
     <title>registration</title>
 </head>
 
@@ -22,15 +22,17 @@
                     <a href="#"><span>Log In</span></a>
                 </h4>
             </div>
-            <label for="email">Email</label> <br>
-            <input type="email" placeholder="gmail.com"> <br>
-            <label for="password">Password</label> <br>
-            <input type="text" placeholder="password"> <br>
-            <button class="btn-light modal-registration">Registration</button>
-            <div class="or">
-                <hr>
-                <p>or</p>
-                <hr>
+            <form>
+                <label for="email">Email</label> <br>
+                <input type="email" placeholder="gmail.com" required> <br>
+                <label for="password">Password</label> <br>
+                <input type="text" placeholder="password" required> <br>
+                <a href="https://yandex.ru/search/?clid=2285101&text=how+use+axios+in+js&lr=10335"><button class="btn-light modal-registration">Registration</button></a>
+                <div class="or">
+            </form>
+            <hr>
+            <p>or</p>
+            <hr>
             </div>
             <button class="facebook"><svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7.69223 3.64283H9.61529C9.82759 3.64283 9.9999 3.46753 9.9999 3.25153V0.615311C9.9999 0.410268 9.8449 0.239659 9.64413 0.225181C9.03222 0.180963 7.83684 0.121094 6.97724 0.121094C4.61534 0.121094 3.07689 1.56109 3.07689 4.17814V6.77327H0.384611C0.172306 6.77327 0 6.94857 0 7.16457V9.9037C0 10.1197 0.172306 10.295 0.384611 10.295H3.07689V17.7298C3.07689 17.9458 3.2492 18.1211 3.4615 18.1211H6.15378C6.36609 18.1211 6.5384 17.9458 6.5384 17.7298V10.295H9.31606C9.51221 10.295 9.67683 10.1451 9.69836 9.94675L9.99759 7.20762C10.023 6.97596 9.84452 6.77327 9.61529 6.77327H6.5384V4.81675C6.5384 4.16835 7.05493 3.64283 7.69223 3.64283Z" fill="white"/>
@@ -46,9 +48,52 @@
 
     </section>
 
+    <section class="modal" id="forget-modal">
+        <div class="mini-container">
+            <button class="close"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71221 0.311372C9.369 -0.0314381 8.81299 -0.0314381 8.46978 0.311372L5.13514 3.78105L1.50748 0.264485C1.28347 0.0355035 0.952659 -0.0535033 0.64401 0.0321651C0.33536 0.117834 0.0977351 0.364615 0.0237767 0.676299C-0.0501817 0.987982 0.0512346 1.31523 0.288487 1.53045L3.89271 5.00012L0.288487 8.4698C0.0512346 8.68502 -0.0501817 9.01226 0.0237767 9.32395C0.0977351 9.63563 0.33536 9.88241 0.64401 9.96808C0.952659 10.0537 1.28347 9.96474 1.50748 9.73576L5.13514 6.2192L8.46978 9.68887C8.68499 9.92614 9.01221 10.0276 9.32387 9.9536C9.63553 9.87964 9.8823 9.642 9.96796 9.33332C10.0536 9.02465 9.96462 8.69382 9.73565 8.4698L6.37757 4.95323L9.73565 1.43667C10.0004 1.10507 9.99057 0.631655 9.71221 0.311372Z" fill="#229A87"/>
+            </svg>
+            </button>
+            <div class="sign-up">
+                <h2>Forgot your password?</h2>
+            </div>
+            <form>
+                <label for="email">Email</label> <br>
+                <input type="email" placeholder="gmail.com" required> <br>
+            </form>
+
+            <button class="facebook"><svg width="10" height="19" viewBox="0 0 10 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.69223 3.64283H9.61529C9.82759 3.64283 9.9999 3.46753 9.9999 3.25153V0.615311C9.9999 0.410268 9.8449 0.239659 9.64413 0.225181C9.03222 0.180963 7.83684 0.121094 6.97724 0.121094C4.61534 0.121094 3.07689 1.56109 3.07689 4.17814V6.77327H0.384611C0.172306 6.77327 0 6.94857 0 7.16457V9.9037C0 10.1197 0.172306 10.295 0.384611 10.295H3.07689V17.7298C3.07689 17.9458 3.2492 18.1211 3.4615 18.1211H6.15378C6.36609 18.1211 6.5384 17.9458 6.5384 17.7298V10.295H9.31606C9.51221 10.295 9.67683 10.1451 9.69836 9.94675L9.99759 7.20762C10.023 6.97596 9.84452 6.77327 9.61529 6.77327H6.5384V4.81675C6.5384 4.16835 7.05493 3.64283 7.69223 3.64283Z" fill="white"/>
+            </svg>Sign up with Facebook
+            </button> <br>
+            <button class="gmail">
+            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.45414 7.65374V10.8379H12.9916C12.3983 12.7671 10.7858 14.1479 8.45414 14.1479C5.67747 14.1479 3.42664 11.8971 3.42664 9.12124C3.42664 6.3454 5.67747 4.09457 8.45414 4.09457C9.70247 4.09457 10.8425 4.55207 11.7216 5.3054L14.0666 2.9604C12.5858 1.61124 10.6158 0.787903 8.45414 0.787903C3.85081 0.787903 0.119141 4.51874 0.119141 9.12124C0.119141 13.7237 3.85081 17.4546 8.45414 17.4546C15.4508 17.4546 16.995 10.9129 16.3091 7.66457L8.45414 7.65374Z" fill="#FCFCFC"/>
+              </svg>Sign up with Google
+              
+          </button>
+        </div>
+
+    </section>
+
+    <section class="modal" id="forget-modal">
+        <div class="mini-container">
+            <button class="close"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71221 0.311372C9.369 -0.0314381 8.81299 -0.0314381 8.46978 0.311372L5.13514 3.78105L1.50748 0.264485C1.28347 0.0355035 0.952659 -0.0535033 0.64401 0.0321651C0.33536 0.117834 0.0977351 0.364615 0.0237767 0.676299C-0.0501817 0.987982 0.0512346 1.31523 0.288487 1.53045L3.89271 5.00012L0.288487 8.4698C0.0512346 8.68502 -0.0501817 9.01226 0.0237767 9.32395C0.0977351 9.63563 0.33536 9.88241 0.64401 9.96808C0.952659 10.0537 1.28347 9.96474 1.50748 9.73576L5.13514 6.2192L8.46978 9.68887C8.68499 9.92614 9.01221 10.0276 9.32387 9.9536C9.63553 9.87964 9.8823 9.642 9.96796 9.33332C10.0536 9.02465 9.96462 8.69382 9.73565 8.4698L6.37757 4.95323L9.73565 1.43667C10.0004 1.10507 9.99057 0.631655 9.71221 0.311372Z" fill="#229A87"/>
+            </svg>
+            </button>
+            <div class="sign-up">
+                <h2>We have sent you a message. Go to the mail</h2>
+            </div>
+            <p>Return to the login page</p>
 
 
-    <script src="../scripts/index.js"></script>
+        </div>
+
+    </section>
+
+
+    <!-- <script src="../scripts/index.js"></script> -->
 </body>
 
 </html>

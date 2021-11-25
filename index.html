@@ -15,57 +15,62 @@
         <section class="modal">
             <div class="mini-container">
                 <button class="close"><img src="./img/icons/ic_close.svg" alt="">
- </button>
+                </button>
 
                 <form action="./views/step1reg.html">
                     <div class="sign-up">
                         <h2>Sign up</h2>
-                        <h4>Have an account?
-                            <a href="#"><span>Log In</span></a>
+                        <h4 class="have-account">Have an account?
+                            <span>Log In</span>
+
                         </h4>
                     </div>
                     <label for="email">Email</label> <br>
-                    <input type="email" placeholder="gmail.com" class="emailInput"> <br>
+                    <input type="email" placeholder="gmail.com" class="emailInput" required> <br>
                     <label for="password">Password</label> <br>
-                    <input type="text" placeholder="password" class="passInput"> <br>
+                    <input type="password" placeholder="password" class="passInput" required> <br>
                     <button type="submit" class="btn-light modal-registration">Registration</button>
                     <div class="or">
                         <hr>
                         <p>or</p>
                         <hr>
                     </div>
-                    <button class="facebook"><img src="./img/icons/Vector.svg" alt=""> Sign up with Facebook</button> <br>
+                    <button class="facebook"><img src="./img/icons/Vector.svg" alt=""> Sign up with Facebook</button>
+                    <br>
                     <button class="gmail"><img src="./img/icons/Vector1.svg" alt=""> Sign up with Google</button>
                 </form>
             </div>
 
         </section>
     </div>
-    <div class="bg-modal">
-        <section class="modal">
+    <div class="bg-login" id="login-modal">
+        <section class="login-modal">
             <div class="mini-container">
                 <button class="close"><img src="./img/icons/ic_close.svg" alt="">
- </button>
+                </button>
 
-                <form action="./views/step1reg.html">
+                <form action="./index.html">
                     <div class="sign-up">
-                        <h2>Sign up</h2>
-                        <h4>Have an account?
-                            <a href="#"><span>Log In</span></a>
+                        <h2>login</h2>
+                        <h4 class="no-account">No account yet?
+                            <span>registraion</span>
                         </h4>
                     </div>
                     <label for="email">Email</label> <br>
                     <input type="email" placeholder="gmail.com" class="emailInput"> <br>
                     <label for="password">Password</label> <br>
                     <input type="text" placeholder="password" class="passInput"> <br>
-                    <h4>Forgot your password?</h4>
-                    <button type="submit" class="btn-light modal-registration">Registration</button>
+                    <h4 class="forget-password">
+                        <span>Forgot your password?</span>
+                    </h4>
+                    <button type="submit" class="btn-light modal-registration">login</button>
                     <div class="or">
                         <hr>
                         <p>or</p>
                         <hr>
                     </div>
-                    <button class="facebook"><img src="./img/icons/Vector.svg" alt=""> Sign up with Facebook</button> <br>
+                    <button class="facebook"><img src="./img/icons/Vector.svg" alt=""> Sign up with Facebook</button>
+                    <br>
                     <button class="gmail"><img src="./img/icons/Vector1.svg" alt=""> Sign up with Google</button>
                 </form>
             </div>
@@ -74,13 +79,13 @@
     </div>
     <header class="header">
         <div class="container">
-            <div class="navbar">
+            <di v class="navbar">
                 <div class="navbar__left">
-                    <a href="./index.htmlgit "> <img src="./img/logo.png " alt="logo "></a>
+                    <a href="./index.html "> <img src="./img/logo.png " alt="logo "></a>
                 </div>
                 <div class="navbar__right">
                     <img class="search" src="./img/icons/ic_search.svg" alt="">
-                    <input type="text" placeholder="Find what interests you">
+                    <input type="search" placeholder="Find what interests you">
                     <select action=" ">
                         <optgroup label="Terminal">
                             <option value=" ">Terminal ES</option>
@@ -90,7 +95,7 @@
                     <button class="btn-dark login">log In</button>
                     <button class="btn-light registration" id="registraion">Registration</button>
                 </div>
-            </div>
+            </di>
 
         </div>
         <hr>
@@ -112,7 +117,6 @@
                     <button class="btn-light student">Student</button>
                     <button class="btn-light parent">Parent</button>
                     <a href="./views/teacher.html"><button class="btn-light teacher">Teacher</button></a>
-
                 </div>
             </div>
 
@@ -122,8 +126,6 @@
     </header>
 
     <section class="container ">
-
-
         <div class="learn ">
             <img src="./img/icons/Fill7.svg" alt="">
             <h2>You can learn anything</h2>
@@ -135,9 +137,8 @@
                 <img src="./img/68.png " alt=" ">
             </div>
         </div>
-
-
     </section>
+
     <section class="mathrix ">
         <div class="container ">
             <img src="./img/40.png " alt=" ">
@@ -169,7 +170,7 @@
             <img src="./img/Fill 7.png " alt=" ">
             <h2>They witness!</h2>
             <p>What YouTube users say about us</p>
-            <div class="cards">
+            <div class="cards" id="first-card">
                 <div class="card left">
                     <img class="bg-left" src="./img/vec1.png" alt=" ">
                     <img class="simbol" src="./img/ic.png" alt=" ">
@@ -198,7 +199,67 @@
                     <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»</p>
                 </div>
             </div>
-            <img class="pagination" src="./img/pagination.png" alt=" ">
+            <div class="cards" id="second-card">
+                <div class="card left">
+                    <img class="bg-left" src="./img/vec1.png" alt=" ">
+                    <img class="simbol" src="./img/ic.png" alt=" ">
+                    <div class="cover">
+                        <img src="./img/pic.png " alt="cover ">
+                        <h1>Julio Rilc</h1>
+                    </div>
+                    <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»</p>
+                </div>
+                <div class="card center">
+                    <img class="bg-center" src="./img/vec2.png" alt=" ">
+                    <img class="simbol" src="./img/ic.png " alt=" ">
+                    <div class="cover">
+                        <img src="./img/pic78.png" alt="cover">
+                        <h1>Georgia Lynch</h1>
+                    </div>
+                    <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»</p>
+                </div>
+                <div class="card right">
+                    <img class="bg-right" src="./img/Vec3.png" alt=" ">
+                    <img class="simbol" src="./img/ic.png" alt=" ">
+                    <div class="cover">
+                        <img src="./img/pic.png" alt="cover">
+                        <h1>Julio Rilc</h1>
+                    </div>
+                    <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»</p>
+                </div>
+            </div>
+            <div class="cards active" id="third-card">
+                <div class="card left">
+                    <img class="bg-left" src="./img/vec1.png" alt=" ">
+                    <img class="simbol" src="./img/ic.png" alt=" ">
+                    <div class="cover">
+                        <img src="./img/pic.png " alt="cover ">
+                        <h1>Julio Rilc</h1>
+                    </div>
+                    <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»</p>
+                </div>
+                <div class="card center">
+                    <img class="bg-center" src="./img/vec2.png" alt=" ">
+                    <img class="simbol" src="./img/ic.png " alt=" ">
+                    <div class="cover">
+                        <img src="./img/pic78.png" alt="cover">
+                        <h1>Georgia Lynch</h1>
+                    </div>
+                    <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»</p>
+                </div>
+                <div class="card right">
+                    <img class="bg-right" src="./img/Vec3.png" alt=" ">
+                    <img class="simbol" src="./img/ic.png" alt=" ">
+                    <div class="cover">
+                        <img src="./img/pic.png" alt="cover">
+                        <h1>Julio Rilc</h1>
+                    </div>
+                    <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»</p>
+                </div>
+            </div>
+            <button class="sliad-show_btn " id="slide-first"></button>
+            <button class="sliad-show_btn" id="slide-second"></button>
+            <button class="sliad-show_btn" id="slide-third"></button>
         </div>
     </section>
 
@@ -220,7 +281,6 @@
                     <a href="# "><img src="./img/pic13.png" alt=" "></a>
                     <h3>Are you studying and still can’t do it?</h3>
                 </div>
-
             </div>
         </div>
     </section>
@@ -239,7 +299,6 @@
                 </div>
                 <img src="./img/68.png" alt=" ">
             </div>
-
         </div>
     </section>
 
@@ -279,8 +338,6 @@
                         </li>
                         <li>
                             <a href="#">First</a>
-
-
                         </li>
                         <li>
                             <a href="#">Terminal L</a>
@@ -354,6 +411,7 @@
 
 
     <script src="./scripts/index.js"></script>
+    <!-- <script src="./scripts/steps.js"></script> -->
 </body>
 
 </html>
