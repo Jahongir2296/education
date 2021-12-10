@@ -5,42 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../style.css/main.css">
     <title>Premium</title>
 </head>
 
 <body>
-    <div class="bg-modal">
-        <section class="modal">
-            <div class="mini-container">
-                <button class="close"><img src="./img/icons/ic_close.svg" alt="">
- </button>
 
-                <form action="./views/step1reg.html">
-                    <div class="sign-up">
-                        <h2>Sign up</h2>
-                        <h4>Have an account?
-                            <a href="#"><span>Log In</span></a>
-                        </h4>
+    <div class="bg-payment">
+        <section class="payment">
+            <div class="payment-container">
+                <button class="close"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.71221 0.311372C9.369 -0.0314381 8.81299 -0.0314381 8.46978 0.311372L5.13514 3.78105L1.50748 0.264485C1.28347 0.0355035 0.952659 -0.0535033 0.64401 0.0321651C0.33536 0.117834 0.0977351 0.364615 0.0237767 0.676299C-0.0501817 0.987982 0.0512346 1.31523 0.288487 1.53045L3.89271 5.00012L0.288487 8.4698C0.0512346 8.68502 -0.0501817 9.01226 0.0237767 9.32395C0.0977351 9.63563 0.33536 9.88241 0.64401 9.96808C0.952659 10.0537 1.28347 9.96474 1.50748 9.73576L5.13514 6.2192L8.46978 9.68887C8.68499 9.92614 9.01221 10.0276 9.32387 9.9536C9.63553 9.87964 9.8823 9.642 9.96796 9.33332C10.0536 9.02465 9.96462 8.69382 9.73565 8.4698L6.37757 4.95323L9.73565 1.43667C10.0004 1.10507 9.99057 0.631655 9.71221 0.311372Z"
+                            fill="#229A87" />
+                    </svg>
+                </button>
+                <div class="sign-up">
+                    <h2>School year plan</h2>
+                    <h4>
+                        <span>12,90 €</span>/ month
+                    </h4>
+                    <h3>Payment information</h3>
+                </div>
+                <form>
+                    <label for="name-card_holder">Name of the card holder</label> <br>
+                    <input type="email" placeholder="Enter card name" required id="name-card_holder"> <br>
+                    <div class="credit-card">
+                        <div class="number-credit_card">
+                            <label for="card-number">Credit card number</label> <br>
+                            <input type="number" placeholder="1111 2222 3333 4444" id="card-number" required> <br>
+                        </div>
+                        <div class="expiry-data">
+                            <label for="expiry">Expiry</label> <br>
+                            <input type="text" placeholder="01/21" id="expiry" required> <br>
+
+                        </div>
+                        <div class="password-cryptogram">
+                            <label for="cryptogram">Cryptogram</label> <br>
+                            <input type="number" placeholder="123" id="cryptogram" required> <br>
+                        </div>
+
                     </div>
-                    <label for="email">Email</label> <br>
-                    <input type="email" placeholder="gmail.com" class="emailInput"> <br>
-                    <label for="password">Password</label> <br>
-                    <input type="text" placeholder="password" class="passInput"> <br>
-                    <button type="submit" class="btn-light modal-registration">Registration</button>
+
                     <div class="or">
-                        <hr>
-                        <p>or</p>
-                        <hr>
+                        <div class="checkbox-payment_form">
+                            <input id="check-conditions_payment" type="checkbox">
+                            <h5>I accept terms and conditions</h5>
+                        </div>
+                        <a href="https://yandex.ru/search/?clid=2285101&text=how+use+axios+in+js&lr=10335"><button
+                                class="btn-light payment-btn">Pay 12,90 € </button></a>
+
                     </div>
-                    <button class="facebook"><img src="./img/icons/Vector.svg" alt=""> Sign up with Facebook</button> <br>
-                    <button class="gmail"><img src="./img/icons/Vector1.svg" alt=""> Sign up with Google</button>
                 </form>
+
+
             </div>
 
         </section>
     </div>
+
 
     <header class="header">
         <div class="container">
@@ -50,18 +75,19 @@
                 </div>
                 <div class="navbar__right">
 
-                    <input type="text" placeholder="Find what interests you">
+                    <input type="search" placeholder="Find what interests you">
                     <select action="">
-                  <optgroup label="Terminal ">
-                  <option value="">Terminal ES</option>
-                  </optgroup>
-                  </select>
-                    <button class="btn-dark login">log In</button>
-                    <button class="btn-light premium">Get Premium</button>
+                        <optgroup label="Terminal ">
+                            <option value="">Terminal ES</option>
+                        </optgroup>
+                    </select>
+
+                    <a href="./premium.html" class=" premium-btn"> <button class="btn-light premium">Get
+                            Premium</button></a>
                     <button class="additional"><img src="../img/icons/ic_user.svg" alt="">
-                  </button>
+                    </button>
                     <button class="additional"><img src="../img/icons/ic.svg" alt="">
-                  </button>
+                    </button>
                 </div>
             </div>
         </div>
@@ -115,8 +141,9 @@
                     <div class="box-main">
                         <h5>MATHRIX recommends </h5>
                         <h4><span>12,90 €</span>/month</h4>
-                        <p>Formula invoiced in a single payment <br> of 45.45€ for the period from <br> 04/14/2020 to 07/31/2020</p>
-                        <button class="btn-light">Get premium</button>
+                        <p>Formula invoiced in a single payment <br> of 45.45€ for the period from <br> 04/14/2020 to 07/31/2020
+                        </p>
+                        <button class="btn-light" id="go-payment">Get premium</button>
                     </div>
                 </div>
                 <div class="month__box">
@@ -127,7 +154,7 @@
                     <div class="box-main">
                         <h4><span>17,90 €</span>/month</h4>
                         <p>Formule renouvelée tous les mois <br> annulable à tout moment</p>
-                        <button class="btn-light">Get premium</button>
+                        <button class="btn-light" id="go-payment">Get premium</button>
                     </div>
                 </div>
 
@@ -165,36 +192,198 @@
             <img src="../img/Fill 7.png " alt=" ">
             <h2>They witness!</h2>
             <p>What YouTube users say about us</p>
-            <div class="cards">
-                <div class="card left">
-                    <img class="bg-left" src="../img/vec1.png" alt=" ">
-                    <img class="simbol" src="../img/ic.png" alt=" ">
-                    <div class="cover">
-                        <img src="../img/pic.png " alt="cover ">
-                        <h1>Julio Rilc</h1>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="cards" id="first-card">
+                            <div class="card left">
+                                <img class="bg-left" src="../img/vec1.png" alt=" ">
+                                <img class="simbol" src="../img/ic.png" alt=" ">
+                                <div class="cover">
+                                    <img src="../img/pic.png " alt="cover ">
+                                    <h1>Julio Rilc</h1>
+                                </div>
+                                <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»
+                                </p>
+                            </div>
+                            <div class="card center">
+                                <img class="bg-center" src="../img/vec2.png" alt=" ">
+                                <img class="simbol" src="../img/ic.png " alt=" ">
+                                <div class="cover">
+                                    <img src="../img/pic78.png" alt="cover">
+                                    <h1>Georgia Lynch</h1>
+                                </div>
+                                <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»
+                                </p>
+                            </div>
+                            <div class="card right">
+                                <img class="bg-right" src="../img/Vec3.png" alt=" ">
+                                <img class="simbol" src="../img/ic.png" alt=" ">
+                                <div class="cover">
+                                    <img src="../img/pic.png" alt="cover">
+                                    <h1>Julio Rilc</h1>
+                                </div>
+                                <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»</p>
+                    <div class="swiper-slide">
+                        <div class="cards" id="second-card">
+                            <div class="card left">
+                                <img class="bg-left" src="../img/vec1.png" alt=" ">
+                                <img class="simbol" src="../img/ic.png" alt=" ">
+                                <div class="cover">
+                                    <img src="../img/pic.png " alt="cover ">
+                                    <h1>Julio Rilc</h1>
+                                </div>
+                                <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»
+                                </p>
+                            </div>
+                            <div class="card center">
+                                <img class="bg-center" src="../img/vec2.png" alt=" ">
+                                <img class="simbol" src="../img/ic.png " alt=" ">
+                                <div class="cover">
+                                    <img src="../img/pic78.png" alt="cover">
+                                    <h1>Georgia Lynch</h1>
+                                </div>
+                                <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»
+                                </p>
+                            </div>
+                            <div class="card right">
+                                <img class="bg-right" src="../img/Vec3.png" alt=" ">
+                                <img class="simbol" src="../img/ic.png" alt=" ">
+                                <div class="cover">
+                                    <img src="../img/pic.png" alt="cover">
+                                    <h1>Julio Rilc</h1>
+                                </div>
+                                <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cards" id="third-card">
+                            <div class="card left">
+                                <img class="bg-left" src="../img/vec1.png" alt=" ">
+                                <img class="simbol" src="../img/ic.png" alt=" ">
+                                <div class="cover">
+                                    <img src="../img/pic.png " alt="cover ">
+                                    <h1>Julio Rilc</h1>
+                                </div>
+                                <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»
+                                </p>
+                            </div>
+                            <div class="card center">
+                                <img class="bg-center" src="../img/vec2.png" alt=" ">
+                                <img class="simbol" src="../img/ic.png " alt=" ">
+                                <div class="cover">
+                                    <img src="../img/pic78.png" alt="cover">
+                                    <h1>Georgia Lynch</h1>
+                                </div>
+                                <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»
+                                </p>
+                            </div>
+                            <div class="card right">
+                                <img class="bg-right" src="../img/Vec3.png" alt=" ">
+                                <img class="simbol" src="../img/ic.png" alt=" ">
+                                <div class="cover">
+                                    <img src="../img/pic.png" alt="cover">
+                                    <h1>Julio Rilc</h1>
+                                </div>
+                                <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    ...
                 </div>
-                <div class="card center">
-                    <img class="bg-center" src="../img/vec2.png" alt=" ">
-                    <img class="simbol" src="../img/ic.png " alt=" ">
-                    <div class="cover">
-                        <img src="../img/pic78.png" alt="cover">
-                        <h1>Georgia Lynch</h1>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+                <!-- </div>
+            <button class="sliad-show_btn " id="slide-first"></button>
+            <button class="sliad-show_btn" id="slide-second"></button>
+            <button class="sliad-show_btn" id="slide-third"></button>
+        </div> -->
+    </section>
+    <section class="accardion-more_question">
+        <div class="container">
+            <h5 class="ask-question">Frequently asked questions</h5>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What is Web Development?
                     </div>
-                    <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»</p>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            Web Development broadly refers to the tasks associated with developing functional websites and applications for the Internet. The web development process includes web design, web content development, client-side/server-side scripting and network security
+                            configuration, among other tasks.
+                        </div>
+                    </div>
                 </div>
-                <div class="card right">
-                    <img class="bg-right" src="../img/Vec3.png" alt=" ">
-                    <img class="simbol" src="../img/ic.png" alt=" ">
-                    <div class="cover">
-                        <img src="../img/pic.png" alt="cover">
-                        <h1>Julio Rilc</h1>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What is HTML?
                     </div>
-                    <p>«My kids and I LOVE Mathrix! The courses are <br> amazing, the teachers are interesting and <br> experienced. Too bad we found out about <br> Mathrix just now.»</p>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            HTML, aka HyperText Markup Language, is the dominant markup language for creating websites and anything that can be viewed in a web browser.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What are some basic technical skills of a Front-End developer?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            <ul style="padding-left: 1rem;">
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>Frameworks (CSS and JavaScript frameworks)</li>
+                                <li>Responsive Design</li>
+                                <li>Version Control/Git</li>
+                                <li>Testing/Debugging</li>
+                                <li>Browser Developer Tools</li>
+                                <li>Web Performance</li>
+                                <li>SEO (Search Engine Optimization)</li>
+                                <!-- <li>CSS Preprocessing</li> -->
+                                <li>Command Line</li>
+                                <li>CMS (Content Management System)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What is HTTP?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            HTTP, aka HyperText Transfer Protocol, is the underlying protocol used by the World Wide Web and this protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-item-header">
+                        What is CORS?
+                    </div>
+                    <div class="accordion-item-body">
+                        <div class="accordion-item-body-content">
+                            CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images, stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain from which the resource originated.
+                        </div>
+                    </div>
                 </div>
             </div>
-            <img class="pagination" src="../img/pagination.png" alt=" ">
         </div>
     </section>
 
@@ -215,8 +404,11 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../scripts/steps.js"></script>
+    <script>
+    </script>
 
-    <script src="../scripts/index.js"></script>
 </body>
 
 </html>
